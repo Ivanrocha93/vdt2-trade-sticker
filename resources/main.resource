@@ -9,11 +9,12 @@ Resource            pages/dash.resource
 *** Keywords ***
 do login
     go to login page
-    submit credencials             papito@gmail.com                   vaibrasil    
+    submit credencials     papito@gmail.com                   vaibrasil    
     user logged in
 
 Start test
-    New Browser            headless=false    browser=firefox
+    [Arguments]            ${navegador}
+    New Browser            headless=false    browser=${navegador}
 
 finish test
     Take Screenshot

@@ -1,5 +1,5 @@
 *** Settings ***
-Documentation        Dashboard page
+Documentation        Arquivo principal da página do Dashboard
 
 Library              Browser
 
@@ -11,18 +11,18 @@ user logged in
 
 Search user
     [Arguments]            ${target}
-    Fill Text                      css=input[id="keyword"]            ${target}
-    Click                          css=button >> text=Buscar
+    Fill Text              css=input[id="keyword"]            ${target}
+    Click                  css=button >> text=Buscar
 
 Select Sticker
     [Arguments]            ${name}
     Click                  xpath=//img[@alt="${name}"]/..
 
 Get in touch
-    Click                css=button >> text=Entrar em contato
+    Click                  css=button >> text=Entrar em contato
 
 Whatsapp Sticker Message
     [Arguments]            ${sticker_name}
     ${expected_message}    Set Variable        Oi, achei o seu contato no Trade Sticker. Estou interessado(a) na figurinha do ${sticker_name}, bora negociar?
     Switch Page            NEW
-    Wait For Elements State        css=p >> text=${expected_message}    visible    5000
+    Wait For Elements State                    css=p >> text=${expected_message}    visible    5000
