@@ -17,4 +17,7 @@ Start test
     New Browser            headless=false    browser=${navegador}
 
 finish test
+    #Thinking time
+    Sleep                          1
     Take Screenshot
+    
