@@ -26,3 +26,8 @@ Whatsapp Sticker Message
     ${expected_message}    Set Variable        Oi, achei o seu contato no Trade Sticker. Estou interessado(a) na figurinha do ${sticker_name}, bora negociar?
     Switch Page            NEW
     Wait For Elements State                    css=p >> text=${expected_message}    visible    5000
+
+Validade search error page
+    Get Text    xpath=//strong[@class="error"]      equal    Essa busca não retornou dados!
+    Click       css=button >> text=VOLTAR
+    Get Text    xpath=//div[@class="header-content"]//..//strong    equal    Aquela figurinha incrível a um clique de distância.

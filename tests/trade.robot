@@ -15,4 +15,11 @@ Deve negociar a figurinha do Neymar Legends
     Select Sticker               Neymar Jr
     Get in touch
     Whatsapp Sticker Message     Neymar JR
+
+Deve exibir página de erro da funcionalidade buscar e depois voltar
+    do login
+    Search user                  Legends
+    Validade search error page
+    
+
     
