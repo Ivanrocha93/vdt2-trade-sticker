@@ -57,7 +57,7 @@ Execute os comandos abaixo para instalar das dependências do projeto e execuç�
 pip install robot framework
 pip install robotframework-browser
 rfbrowser init
-cd trade-sticker
+cd vdt2-trade-sticker
 robot -d ./logs/ tests/ 
 ```
 
